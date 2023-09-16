@@ -10,7 +10,7 @@ Este repositório contém um conjunto de dados sobre acidentes rodoviários fata
 2. **Variação Anual:** Quais foram os anos com o maior e o menor número de acidentes rodoviários fatais?
 3. **Distribuição por Estado:** Em quais estados ou territórios australianos ocorreram a maioria dos acidentes rodoviários fatais?
 4. **Idade dos Envolvidos:** Qual é a distribuição de acidentes fatais por faixa etária dos envolvidos?
-5. **Principais Causas:** Quais são as principais causas de acidentes rodoviários fatais na Austrália ao longo dos anos?
+5. **Principais Causas:** Quais peridos do dia teve mais acidentes rodoviários fatais na Austrália ao longo dos anos?
 6. **Média de Vítimas:** Qual é a média de vítimas fatais por acidente rodoviário durante esse período?
 7. **Sazonalidade:** Existe uma sazonalidade nos acidentes rodoviários fatais, com mais ocorrências em determinadas épocas do ano?
 8. **Tipos de Veículos:** Quais são os tipos de veículos mais comuns envolvidos em acidentes fatais na Austrália?

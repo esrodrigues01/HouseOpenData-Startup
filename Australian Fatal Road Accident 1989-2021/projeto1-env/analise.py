@@ -80,3 +80,13 @@ plt.ylabel('Número de Acidentes Fatais')
 plt.title('Distribuição de Acidentes Rodoviários Fatais por Faixa Etária na Austrália')
 plt.xticks(rotation=0)  # Rotaciona os rótulos do eixo x para melhor legibilidade
 plt.show()
+
+
+#Respodendo a pergunta 5
+contagem_por_periodo = dados['Time of day'].value_counts()
+contagem_por_periodo.plot(kind='bar', figsize=(10, 6))
+plt.xlabel('Perido')
+plt.ylabel('Número de Acidentes Fatais')
+plt.title('Distribuição de Acidentes Rodoviários Fatais por Período na Austrália')
+plt.xticks(rotation=0)  # Rotaciona os rótulos do eixo x para melhor legibilidade
+plt.show()
