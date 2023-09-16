@@ -90,3 +90,12 @@ plt.ylabel('Número de Acidentes Fatais')
 plt.title('Distribuição de Acidentes Rodoviários Fatais por Período na Austrália')
 plt.xticks(rotation=0)  # Rotaciona os rótulos do eixo x para melhor legibilidade
 plt.show()
+
+#Respodendo a pergunta 6
+total_acidentes = dados['Count'].count()
+qtd_anos = 32
+media = total_acidentes/qtd_anos
+print('Média de Acidentes Rodoviários Fatais por ano na Austrália: ', media)
+
+
+#Respodendo a pergunta 7
