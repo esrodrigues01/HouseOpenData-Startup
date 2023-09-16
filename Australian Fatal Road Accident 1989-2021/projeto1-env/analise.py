@@ -21,8 +21,6 @@ dados.to_csv('.\dataset\crash_Data_contagem.csv', index=False)
 
 
 #Respondendo a pergunta 1 
-
-
 plt.figure(figsize=(10, 10))  # Ajuste o tamanho da figura conforme necessário
 plt.plot(dados['Year'], dados["Count"], marker='o', linestyle='-')
 plt.title('Tendência de Acidentes Rodoviários Fatais na Austrália (1989-2021)')
@@ -31,3 +29,20 @@ plt.ylabel('Acidentes')
 plt.grid(True)
 plt.show()
 
+#Respondendo a pergunta 2
+contagem_anos = dados.groupby('Year')['Count'].count()
+ano_maior_numero_acidentes = contagem_anos.idxmax()
+maior_numero_acidentes = contagem_anos.max()
+# Encontre o ano com o menor número de acidentes fatais
+ano_menor_numero_acidentes = contagem_anos.idxmin()
+menor_numero_acidentes = contagem_anos.min()
+
+anos = [ano_maior_numero_acidentes, ano_menor_numero_acidentes]
+contagens = [maior_numero_acidentes, menor_numero_acidentes]
+
+plt.bar(anos, contagens, color=['red', 'blue'])
+plt.xlabel('Ano')
+plt.ylabel('Número de Acidentes Fatais')
+plt.title('Anos com Maior e Menor Número de Acidentes Fatais')
+plt.xticks(anos)
+plt.show()
