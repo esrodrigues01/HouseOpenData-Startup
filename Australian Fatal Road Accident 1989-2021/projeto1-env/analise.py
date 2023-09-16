@@ -46,3 +46,18 @@ plt.ylabel('Número de Acidentes Fatais')
 plt.title('Anos com Maior e Menor Número de Acidentes Fatais')
 plt.xticks(anos)
 plt.show()
+
+#Respodendo a pergunta 3
+
+contagem_por_estado = dados.groupby('State')['Count'].count()
+estados = [dados['State']]
+contagem_por_estado.plot(kind='bar', figsize=(10, 6))
+plt.xlabel('Estado')
+plt.ylabel('Número de Acidentes Fatais')
+plt.title('Distribuição de Acidentes Rodoviários Fatais por Estado na Austrália')
+plt.xticks(rotation=45)  # Rotaciona os rótulos do eixo x para melhor legibilidade
+plt.show()
+#print(contagem_por_estado)
+
+
+#Respodendo a pergunta 3
