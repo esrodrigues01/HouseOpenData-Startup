@@ -60,4 +60,23 @@ plt.show()
 #print(contagem_por_estado)
 
 
-#Respodendo a pergunta 3
+#Respodendo a pergunta 4
+#Criar uma função para determinar a faixa etária de cada cidadão
+
+def categorizar_faixa_etaria(idade):
+    if idade <= 25:
+        return 'Jovem'
+    elif 26 <= idade <= 60:
+        return 'Adulto'
+    else:
+        return 'Idoso'
+
+
+dados['Faixa_etaria'] = dados['Age'].apply(categorizar_faixa_etaria)
+contagem_por_faixa_etaria = dados['Faixa_etaria'].value_counts()
+contagem_por_faixa_etaria.plot(kind='bar', figsize=(10, 6))
+plt.xlabel('Faixa Etária')
+plt.ylabel('Número de Acidentes Fatais')
+plt.title('Distribuição de Acidentes Rodoviários Fatais por Faixa Etária na Austrália')
+plt.xticks(rotation=0)  # Rotaciona os rótulos do eixo x para melhor legibilidade
+plt.show()
