@@ -107,3 +107,11 @@ plt.title('Quantidade de Acidentes Rodoviários Fatais por Gênero e na Austrál
 plt.xticks(rotation=0)  # Rotaciona os rótulos do eixo x para melhor legibilidade
 plt.show()
 
+#Respodendo a pergunta 8
+contagem_por_genero = dados.groupby('Road User')['Count'].count()
+contagem_por_genero.plot(kind='bar', figsize=(10, 6))
+plt.xlabel('Tipo de Veículo')
+plt.ylabel('Acidentes')
+plt.title('Tipos de Veículo que se envolve em acidentes Rodoviários Fatais na Austrália')
+plt.xticks(rotation=0)  # Rotaciona os rótulos do eixo x para melhor legibilidade
+plt.show()
