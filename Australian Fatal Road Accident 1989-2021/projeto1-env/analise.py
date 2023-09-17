@@ -115,3 +115,11 @@ plt.ylabel('Acidentes')
 plt.title('Tipos de Veículo que se envolve em acidentes Rodoviários Fatais na Austrália')
 plt.xticks(rotation=0)  # Rotaciona os rótulos do eixo x para melhor legibilidade
 plt.show()
+
+#Respodendo a pergunta 9 
+
+soma_idade = dados['Age'].sum()
+qtd_pessoas = dados['Age'].count()
+mediaIdade = soma_idade/qtd_pessoas
+print("A Média de Idade é: ", mediaIdade)
+
