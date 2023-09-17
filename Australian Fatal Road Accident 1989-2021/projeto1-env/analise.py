@@ -99,3 +99,11 @@ print('Média de Acidentes Rodoviários Fatais por ano na Austrália: ', media)
 
 
 #Respodendo a pergunta 7
+contagem_por_genero = dados.groupby('Gender')['Count'].count()
+contagem_por_genero.plot(kind='bar', figsize=(10, 6))
+plt.xlabel('Gênero')
+plt.ylabel('Acidentes')
+plt.title('Quantidade de Acidentes Rodoviários Fatais por Gênero e na Austrália')
+plt.xticks(rotation=0)  # Rotaciona os rótulos do eixo x para melhor legibilidade
+plt.show()
+

@@ -12,7 +12,7 @@ Este repositório contém um conjunto de dados sobre acidentes rodoviários fata
 4. **Idade dos Envolvidos:** Qual é a distribuição de acidentes fatais por faixa etária dos envolvidos?
 5. **Perído do dia:** Quais peridos do dia teve mais acidentes rodoviários fatais na Austrália ao longo dos anos?
 6. **Média de Vítimas:** Qual é a média de vítimas fatais por acidente rodoviário durante esse período?
-7. **Sazonalidade:** Existe uma sazonalidade nos acidentes rodoviários fatais, com mais ocorrências em determinadas épocas do ano?
+7. **Genero:** Qual gênero mais sofreu acidentes rodoviários fatais, quantos acidades ocorreram em cada gênero?
 8. **Tipos de Veículos:** Quais são os tipos de veículos mais comuns envolvidos em acidentes fatais na Austrália?
 9. **Idade dos Condutores:** Qual é a média de idade dos condutores envolvidos em acidentes fatais?
 10. **Períodos de Feriado:** Como têm evoluído as taxas de acidentes rodoviários fatais durante os períodos de feriado, como o Natal e a Páscoa?
