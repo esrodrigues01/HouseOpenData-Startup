@@ -20,5 +20,7 @@ Este repositório contém um conjunto de dados sobre acidentes rodoviários fata
 ## Fonte de Dados
 Os dados utilizados para responder a essas perguntas estão disponíveis neste repositório e incluem informações como o ID do acidente, estado, mês, ano, dia da semana, tipo de acidente, envolvimento de ônibus e caminhões pesados, limite de velocidade, dados do usuário da via, gênero, idade e muito mais.
 
+Link do dataset: https://www.kaggle.com/datasets/deepcontractor/australian-fatal-car-accident-data-19892021?resource=download
+
 ## Como Utilizar os Dados
-Os dados estão disponíveis em formato [inserir formato de arquivo] e podem ser processados utilizando ferramentas de análise de dados como Python, R ou software de planilhas. Para começar, você pode fazer o download dos dados a partir deste repositório e explorá-los com as suas próprias ferramentas de análise de dados.
+Os dados estão disponíveis em formato csv e podem ser processados utilizando ferramentas de análise de dados como Python, R ou software de planilhas. Para começar, você pode fazer o download dos dados a partir deste repositório e explorá-los com as suas próprias ferramentas de análise de dados.
