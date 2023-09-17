@@ -132,3 +132,22 @@ porcentagemAcidentesNatal = ((somaFeriado_natal_SIM * 100) / totais)
 porcentagemAcidentesPascoa = ((somaFeriado_pascoa_SIM * 100) / totais)
 print("Total de acidentes no período de Natal: ", porcentagemAcidentesNatal, "%")
 print("Total de acidentes no período de Páscoa: ", porcentagemAcidentesPascoa, "%")
+
+#pergunta extra qual dia da semana tem mais acidente por ano #Melhorar
+contagem_acidentes = dados.groupby(['Year', 'Dayweek'])['Crash ID'].count().reset_index()
+dia_mais_acidentes = contagem_acidentes.groupby('Year')['Crash ID'].idxmax()
+dia_mais_acidentes = contagem_acidentes.loc[dia_mais_acidentes]['Dayweek']
+plt.figure(figsize=(12, 6))
+for ano in contagem_acidentes['Year'].unique():
+    dados_ano = contagem_acidentes[contagem_acidentes['Year'] == ano]
+    plt.bar(dados_ano['Year'], dados_ano['Dayweek'], label=f'Year {ano}')
+
+plt.xlabel('Ano')
+plt.ylabel('Dia da Semana')
+plt.title('Dia da Semana com Mais Acidentes por Ano')
+plt.legend()
+plt.xticks(rotation=45)
+plt.show()
+
+
+
