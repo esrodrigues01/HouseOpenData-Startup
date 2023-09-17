@@ -123,3 +123,12 @@ qtd_pessoas = dados['Age'].count()
 mediaIdade = soma_idade/qtd_pessoas
 print("A Média de Idade é: ", mediaIdade)
 
+
+#Respodendo a pergunta 10
+somaFeriado_natal_SIM = (dados['Christmas Period'] == 'Yes').sum()
+somaFeriado_pascoa_SIM = (dados['Easter Period'] == 'Yes').sum()
+totais = dados['Christmas Period'].count()
+porcentagemAcidentesNatal = ((somaFeriado_natal_SIM * 100) / totais)
+porcentagemAcidentesPascoa = ((somaFeriado_pascoa_SIM * 100) / totais)
+print("Total de acidentes no período de Natal: ", porcentagemAcidentesNatal, "%")
+print("Total de acidentes no período de Páscoa: ", porcentagemAcidentesPascoa, "%")
